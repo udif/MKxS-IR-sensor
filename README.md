@@ -1,3 +1,5 @@
+View this project on [CADLAB.io](https://cadlab.io/project/23772). 
+
 # PRUSA IR sensor board
 
 KiCad PCB layout
