@@ -5,16 +5,16 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 1
 Title "IR sensor"
-Date "2019-07-04"
-Rev "0.4"
-Comp "Prusa Development a.s."
+Date "2020-06-24"
+Rev "0.4.1"
+Comp "PRUSA RESEARCH s.r.o"
 Comment1 "http://creativecommons.org/licenses/by-sa/4.0/"
 Comment2 "Licensed under the Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)"
 Comment3 "#ok1hra"
 Comment4 ""
 $EndDescr
 $Comp
-L opto:LTV-817 U1
+L IR-endstop-0.4.1-rescue:LTV-817-opto U1
 U 1 1 5BD7084A
 P 4950 3975
 F 0 "U1" H 4950 4300 50  0000 C CNN
@@ -25,7 +25,7 @@ F 3 "" H 4950 4209 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L conn:CONN_01X03 P1
+L IR-endstop-0.4.1-rescue:CONN_01X03-conn P1
 U 1 1 5BD70990
 P 7525 3575
 F 0 "P1" H 7603 3616 50  0000 L CNN
@@ -37,7 +37,7 @@ F 4 "" H 7525 3575 50  0001 C CNN "alternative"
 	1    0    0    -1  
 $EndComp
 $Comp
-L device:R R1
+L IR-endstop-0.4.1-rescue:R-device R1
 U 1 1 5BD709E3
 P 4500 3875
 F 0 "R1" V 4350 3875 50  0000 C CNN
@@ -67,7 +67,7 @@ Wire Wire Line
 Text Notes 7175 3675 0    61   ~ 0
 +5V\nOUT\nGND
 $Comp
-L device:R R2
+L IR-endstop-0.4.1-rescue:R-device R2
 U 1 1 5BD6C176
 P 5400 3675
 F 0 "R2" V 5250 3675 50  0000 C CNN
@@ -101,7 +101,7 @@ Wire Wire Line
 Wire Wire Line
 	6025 3575 6025 3625
 $Comp
-L device:R R3
+L IR-endstop-0.4.1-rescue:R-device R3
 U 1 1 5BE2C39F
 P 5750 3575
 F 0 "R3" V 5600 3575 50  0000 C CNN
@@ -126,7 +126,7 @@ Text Notes 4275 3875 1    50   ~ 0
 Text Notes 5275 3975 0    50   ~ 0
 0,32V
 $Comp
-L transistors:2N7002 Q1
+L IR-endstop-0.4.1-rescue:2N7002-transistors Q1
 U 1 1 5BE32902
 P 5925 3825
 F 0 "Q1" H 6115 3871 50  0000 L CNN
@@ -147,7 +147,7 @@ Connection ~ 5500 3475
 Wire Wire Line
 	7050 3875 7050 3675
 $Comp
-L IR-endstop-04-rescue:D_ALT-device-DLP-control-rescue-DLP-control-04-rescue-DLP-control-05-rescue-SL1-control-05b-rescue-SL-controller-06-rescue-SL-controller-06b-rescue-SL-controller-06c-rescue-IR-endstop-03-rescue-IR-endstop-03b-rescue D2
+L IR-endstop-0.4.1-rescue:D_ALT-device-DLP-control-rescue-DLP-control-04-rescue-DLP-control-05-rescue-SL1-control-05b-rescue-SL-controller-06-rescue-SL-controller-06b-rescue-SL-controller-06c-rescue-IR-endstop-03-rescue-IR-endstop-03b-rescue-IR-endstop-04-rescue D2
 U 1 1 5D0C3FD7
 P 7050 4025
 F 0 "D2" V 6975 4125 50  0000 L CNN
@@ -161,9 +161,9 @@ $EndComp
 Text Label 6200 4325 0    50   ~ 0
 GND
 Text Notes 6100 7450 0    50   ~ 0
-Changelog\n--------\nrev 0.4\n- add R4\nrev 0.3\n- add D2
+Changelog\n--------\nrev 0.4.1\n- modify footprints\nrev 0.4\n= 0.3b s with new silkscreen\nrev 0.3b\n- add R4\nrev 0.3\n- add D2
 $Comp
-L device:R R4
+L IR-endstop-0.4.1-rescue:R-device R4
 U 1 1 5D1DA941
 P 6800 3675
 F 0 "R4" V 6650 3675 50  0000 C CNN
